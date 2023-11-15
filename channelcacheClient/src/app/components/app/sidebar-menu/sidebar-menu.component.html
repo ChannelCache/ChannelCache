@@ -1,1 +1,41 @@
-<p>sidebar-menu works!</p>
+<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4">
+  <nav class="flex flex-1 flex-col">
+    <ul role="list" class="flex flex-1 flex-col gap-y-7">
+      <li>
+        <ul role="list" class="-mx-2 space-y-1">
+          <li>
+            <a routerLink="/home"
+               routerLinkActive="bg-gray-50 text-sky-400"
+               class="text-gray-700 hover:text-sky-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+              <i class="fas fa-home"></i>Home
+            </a>
+          </li>
+          <li>
+            <a routerLink="/channels"
+               routerLinkActive="bg-gray-50 text-sky-400"
+               class="text-gray-700 hover:text-sky-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+              <i class="fas fa-hashtag"></i>
+              Channels
+            </a>
+          </li>
+          <li>
+            <a routerLink="/playlists"
+               routerLinkActive="bg-gray-50 text-sky-400"
+               class="text-gray-700 hover:text-sky-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+              <i class="fas fa-list"></i>
+              Playlists
+            </a>
+          </li>
+          <li class="mt-auto">
+            <a routerLink="/config"
+               routerLinkActive="bg-gray-50 text-sky-400"
+               class="text-gray-700 hover:text-sky-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+              <i class="fas fa-cog"></i>
+              Config
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
